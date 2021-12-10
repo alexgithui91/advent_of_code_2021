@@ -72,5 +72,10 @@ def part_two():
     return positives
 
 
-print(part_one())
-print(part_two())
+def main():
+    print(part_one())
+    print(part_two())
+
+
+if __name__ == "__main__":
+    main()
