@@ -28,8 +28,24 @@ def part_one():
         + str(most_comm_4)
         + str(most_comm_5)
     )
-
     most_comm_decimal = int(most_comm_binary, 2)
+
+    least_comm_1 = min(set(col1), key=col1.count)
+    least_comm_2 = min(set(col2), key=col2.count)
+    least_comm_3 = min(set(col3), key=col3.count)
+    least_comm_4 = min(set(col4), key=col4.count)
+    least_comm_5 = min(set(col5), key=col5.count)
+
+    least_comm_binary = (
+        str(least_comm_1)
+        + str(least_comm_2)
+        + str(least_comm_3)
+        + str(least_comm_4)
+        + str(least_comm_5)
+    )
+    least_comm_decimal = int(least_comm_binary, 2)
+
+    print(most_comm_decimal * least_comm_decimal)
 
 
 def part_two():
