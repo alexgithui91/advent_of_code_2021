@@ -23,9 +23,7 @@ def part_one():
 
 
 def part_two():
-    with open("day3_input.csv", newline="") as f:
-        reader = csv.reader(f)
-        org_list = list(reader)
+    pass
 
 
 def main():
