@@ -23,12 +23,16 @@ def part_one():
 
 
 def part_two():
-    pass
+    with open("day3_input.csv", newline="") as f:
+        reader = csv.reader(f)
+        tmp_list = list(reader)
+
+    print(tmp_list)
 
 
 def main():
-    part_one()
-    # part_two()
+    # part_one()
+    part_two()
 
 
 if __name__ == "__main__":
